@@ -1,5 +1,5 @@
 #include "factor_server.h"
-
+//test
 my_shm_read<my_factor_record>* g_factor_sub;
 std::vector<int> g_factor_fds_;
 pthread_spinlock_t g_factor_lock;
