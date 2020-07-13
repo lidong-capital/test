@@ -1,11 +1,11 @@
 #include "factor_server.h"
 //test
-my_shm_read<my_factor_record>* g_factor_sub;
-std::vector<int> g_factor_fds_;
-pthread_spinlock_t g_factor_lock;
-std::unordered_map <long, st_list_node> unorderMap_list;
+my_shm_read<my_factor_record>* g_factor_sub;//1
+std::vector<int> g_factor_fds_;//2
+pthread_spinlock_t g_factor_lock;//3
+std::unordered_map <long, st_list_node> unorderMap_list;//4
 //123
-//457-123-test
+//457-123-test_client
 // 建立客户端连接
 int quote_factor_accept1(int fd)                      
 {
