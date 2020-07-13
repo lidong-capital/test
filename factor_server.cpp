@@ -6,7 +6,7 @@ pthread_spinlock_t g_factor_lock;//3
 std::unordered_map <long, st_list_node> unorderMap_list;//4
 //123
 //457-123-test_client
-// 建立客户端连接
+//建立客户端连接
 int quote_factor_accept1(int fd)                      
 {
     auto it = find(g_factor_fds_.begin(), g_factor_fds_.end(), fd);
