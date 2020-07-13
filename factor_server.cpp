@@ -1,8 +1,8 @@
 #include "factor_server.h"
 //test
 my_shm_read<my_factor_record>* g_factor_sub;
-std::vector<int> g_factor_fds_;
-pthread_spinlock_t g_factor_lock;
+std::vector<int> g_factor_fds_;//test1
+pthread_spinlock_t g_factor_lock;//test2
 std::unordered_map <long, st_list_node> unorderMap_list;
 //123
 //457-123-lidong-server
